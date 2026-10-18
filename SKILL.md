@@ -17,6 +17,11 @@ Everything here works with **no account, no API key, and no payment.** The value
 methodology in `references/` plus the two bundled data sets: 30 original hook frameworks in
 `data/hook-frameworks.md` and the angle × awareness matrix in `data/angle-matrix.md`.
 
+**Optional:** if the user has set `HOOKADS_API_KEY`, three extra commands (`/ad-prompts`,
+`/hook-bank`, `/ad-teardown`) can search the full HookAds library: 1,800+ AI ad prompts with
+their images, all 118 hook frameworks, teardowns and case studies. See
+`references/hookads-api.md`. Without a key they fall back to the bundled data, so nothing breaks.
+
 Platforms are global: **TikTok, Instagram Reels, YouTube Shorts, and Meta (Facebook/Instagram
 feed + Stories).** Match the norms of whichever one the user names.
 
@@ -47,6 +52,9 @@ feed + Stories).** Match the norms of whichever one the user names.
 | `/hook-audit <ad copy>` | Score a hook/ad against the frameworks and suggest specific fixes |
 | `/hook-remix <winning hook>` | Spin one hook into 5 variations across different angles |
 | `/image-ad-prompt <product>` | AI image-ad prompts (static creative) ready for an image model |
+| `/ad-prompts <product>` | Real AI ad prompts from the HookAds library, with images and attribution (optional key) |
+| `/hook-bank <trigger>` | Browse hook frameworks by trigger, format or awareness stage (118 with a key, 30 without) |
+| `/ad-teardown <brand>` | A real ad teardown or case study to borrow from (optional key) |
 
 If these aren't registered as `/` commands yet, copy `commands/*.md` into the project's
 `.claude/commands/` folder (or just describe what you want — the workflows below work either way).

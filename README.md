@@ -39,6 +39,21 @@ Compatible with Claude Code and any agent that loads Anthropic-style skills (a `
 
 ---
 
+## Optional: connect the HookAds library
+
+Everything above works without a key. To have the skill search real examples instead of relying only on the 30 bundled frameworks, create a free key at hookads.ai/dashboard and set it in your shell:
+
+```bash
+export HOOKADS_API_KEY=hka_live_<your key>
+```
+ The free key covers 100 calls a day.
+
+Three commands use it. `/ad-prompts` finds real AI ad prompts, each with the image it made and the creator credited. `/hook-bank` browses all 118 hook frameworks. `/ad-teardown` pulls a real ad teardown or case study. Without a key, they fall back to the bundled data.
+
+If you'd rather have a live connection, the same key works with the HookAds MCP server at hookads.ai/mcp.
+
+---
+
 ## Usage
 
 Point it at a product and let it write. Eight commands:
@@ -53,6 +68,9 @@ Point it at a product and let it write. Eight commands:
 | `/hook-audit <ad copy>` | A scorecard on your hook/ad against the frameworks + specific rewrites |
 | `/hook-remix <winning hook>` | One winner spun into 5 variations across different triggers |
 | `/image-ad-prompt <product>` | 5 AI image-ad concepts with paste-ready prompts (static creative) |
+| `/ad-prompts <product>` | Real AI ad prompts from the HookAds library, with the image each one made (optional key) |
+| `/hook-bank <trigger>` | Hook frameworks by trigger, format or awareness stage: 118 with a key, the bundled 30 without |
+| `/ad-teardown <brand>` | A real ad teardown or case study to borrow from (optional key) |
 
 No slash commands? Just ask in plain language — *"write me some TikTok hooks for a
 project-management app"* or *"turn this into a Reels script"* — the skill triggers on intent.
