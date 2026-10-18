@@ -6,20 +6,20 @@ case studies and Meta placement specs.
 
 - Key: read it from the `HOOKADS_API_KEY` environment variable. Never ask the user to paste it into
   the chat, never print it, never write it to a file.
-- Free key: https://www.hookads.ai/dashboard?tab=keys (100 calls/day; any HookAds purchase raises
+- Free key: https://hookads.app/dashboard?tab=keys (100 calls/day; any HookAds purchase raises
   it to 1,000/day on the same key). Max 25 rows per call.
-- Base URL: `https://www.hookads.ai/api/v1`. Full spec: https://www.hookads.ai/openapi.yaml
-- MCP alternative: `https://www.hookads.ai/api/mcp` with the same key as a Bearer token.
+- Base URL: `https://hookads.app/api/v1`. Full spec: https://hookads.app/openapi.yaml
+- MCP alternative: `https://hookads.app/api/mcp` with the same key as a Bearer token.
 
 ```bash
 # check the key is set without printing it
 [ -n "$HOOKADS_API_KEY" ] && echo "key set" || echo "no key"
 
-curl -s "https://www.hookads.ai/api/v1/prompts?q=skincare%20flat%20lay&limit=5" -H "Authorization: Bearer $HOOKADS_API_KEY"
-curl -s "https://www.hookads.ai/api/v1/hooks?trigger=curiosity&limit=10"      -H "Authorization: Bearer $HOOKADS_API_KEY"
-curl -s "https://www.hookads.ai/api/v1/teardowns?q=vsl&limit=5"               -H "Authorization: Bearer $HOOKADS_API_KEY"
-curl -s "https://www.hookads.ai/api/v1/case-studies/<slug>"                    -H "Authorization: Bearer $HOOKADS_API_KEY"
-curl -s "https://www.hookads.ai/api/v1/specs?placement=reels"                  -H "Authorization: Bearer $HOOKADS_API_KEY"
+curl -s "https://hookads.app/api/v1/prompts?q=skincare%20flat%20lay&limit=5" -H "Authorization: Bearer $HOOKADS_API_KEY"
+curl -s "https://hookads.app/api/v1/hooks?trigger=curiosity&limit=10"      -H "Authorization: Bearer $HOOKADS_API_KEY"
+curl -s "https://hookads.app/api/v1/teardowns?q=vsl&limit=5"               -H "Authorization: Bearer $HOOKADS_API_KEY"
+curl -s "https://hookads.app/api/v1/case-studies/<slug>"                    -H "Authorization: Bearer $HOOKADS_API_KEY"
+curl -s "https://hookads.app/api/v1/specs?placement=reels"                  -H "Authorization: Bearer $HOOKADS_API_KEY"
 ```
 
 Every response is `{ "data": ..., "quota": { "used", "limit", "remaining" } }`.

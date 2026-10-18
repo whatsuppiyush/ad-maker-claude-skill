@@ -15,7 +15,7 @@ Load the `ad-maker` skill and read `references/hookads-api.md`.
    ("by @handle", with source link). Then adapt the best 2 to the user's product, keeping the
    structure that made them work and saying what you changed.
 3. **Without a key, or on a 401/402:** run the `/image-ad-prompt` workflow instead, and mention
-   once that a free key at https://www.hookads.ai/dashboard?tab=keys unlocks 1,800+ real prompts
+   once that a free key at https://hookads.app/dashboard?tab=keys unlocks 1,800+ real prompts
    with their images.
 
 Never strip attribution from a library prompt.
