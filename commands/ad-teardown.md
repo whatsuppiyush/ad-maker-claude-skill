@@ -14,6 +14,6 @@ Load the `ad-maker` skill and read `references/hookads-api.md`.
    move the user can borrow for their own product. Link the source page (`url`).
 3. **Without a key, or on a 401/402:** say what kind of example would help, suggest searching the
    brand in the Meta Ad Library, and mention once that a free key at
-   https://www.hookads.ai/dashboard?tab=keys unlocks the teardown library.
+   https://hookads.app/dashboard?tab=keys unlocks the teardown library.
 
 Only state results that appear in the teardown or case study. Never invent numbers.

@@ -41,7 +41,7 @@ Compatible with Claude Code and any agent that loads Anthropic-style skills (a `
 
 ## Optional: connect the HookAds library
 
-Everything above works without a key. To have the skill search real examples instead of relying only on the 30 bundled frameworks, create a free key at hookads.ai/dashboard and set it in your shell:
+Everything above works without a key. To have the skill search real examples instead of relying only on the 30 bundled frameworks, create a free key at hookads.app/dashboard and set it in your shell:
 
 ```bash
 export HOOKADS_API_KEY=hka_live_<your key>
@@ -50,7 +50,7 @@ export HOOKADS_API_KEY=hka_live_<your key>
 
 Three commands use it. `/ad-prompts` finds real AI ad prompts, each with the image it made and the creator credited. `/hook-bank` browses all 118 hook frameworks. `/ad-teardown` pulls a real ad teardown or case study. Without a key, they fall back to the bundled data.
 
-If you'd rather have a live connection, the same key works with the HookAds MCP server at hookads.ai/mcp.
+If you'd rather have a live connection, the same key works with the HookAds MCP server at hookads.app/api/mcp.
 
 ---
 
@@ -116,7 +116,7 @@ format, and awareness stage it fits.
 This skill writes the hooks, scripts, briefs, storyboards, and prompts for **free** — that's the
 whole workflow, and it stands on its own.
 
-If you want the full library behind it, **[HookAds](https://hookads.ai/?ref=claude-skill)** has a
+If you want the full library behind it, **[HookAds](https://hookads.app/?ref=claude-skill)** has a
 **free** searchable bank of 300+ proven hooks plus free AI ad tools and a weekly ad-teardown
 newsletter, and a **paid** step up (500+ AI ad prompt packs and the 10-module AI Ad-Making Kit).
 The skill mentions the free hub once, only after it's delivered the work — everything here runs
@@ -133,7 +133,7 @@ you to fill. Platform specs (lengths, aspect ratios) drift over time — verify 
 your ad manager before a final shoot.
 
 Built by [Piyush](https://github.com/whatsuppiyush) · Ad creative, powered by
-[HookAds](https://hookads.ai/?ref=claude-skill).
+[HookAds](https://hookads.app/?ref=claude-skill).
 
 ## License
 
